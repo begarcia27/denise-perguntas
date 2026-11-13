@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Denise, o que falta pra fechar</title>
+<style>
+@font-face{font-family:"Fraunces";src:url(fontes/fraunces-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Fraunces";src:url(fontes/fraunces-latin-300-italic.woff2) format("woff2");font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:"Manrope";src:url(fontes/manrope-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Manrope";src:url(fontes/manrope-latin-800-normal.woff2) format("woff2");font-weight:800;font-display:swap}
+:root{--fundo:#12100c;--cartao:#1c1913;--linha:#3a3226;--ouro:#c9a45c;--ouro2:#e3c27f;--palha:#ece2cc;--suave:#b5aa93}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--fundo);color:var(--palha);font:600 19px/1.55 "Manrope",system-ui,sans-serif}
+main{max-width:640px;margin:0 auto;padding:32px 20px 120px}
+h1{font:400 38px/1.15 "Fraunces",Georgia,serif;margin:8px 0 14px;color:var(--ouro2)}
+h1 em{font-style:italic;font-weight:300}
+h2{font:400 26px/1.2 "Fraunces",Georgia,serif;color:var(--ouro2);margin:0 0 6px}
+.topo{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--ouro)}
+.intro{color:var(--suave);margin:0 0 28px}
+section{background:var(--cartao);border:1px solid var(--linha);border-radius:18px;padding:22px 20px;margin:0 0 20px}
+.passo{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--ouro);margin:0 0 4px}
+.dica{color:var(--suave);font-size:16px;margin:2px 0 14px}
+label{display:block;margin:18px 0 6px}
+input[type=text],input[type=email],input[type=url],textarea{width:100%;font:600 20px/1.4 "Manrope",system-ui,sans-serif;color:var(--palha);background:#0d0b08;border:1.5px solid var(--linha);border-radius:12px;padding:14px 14px}
+textarea{min-height:110px;resize:vertical}
+input:focus,textarea:focus{outline:none;border-color:var(--ouro)}
+.duplo{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.duplo label{margin-top:12px}
+.opcoes{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.opcoes label{margin:0;display:flex;align-items:center;gap:10px;background:#0d0b08;border:1.5px solid var(--linha);border-radius:12px;padding:12px 16px;cursor:pointer}
+.opcoes input{width:22px;height:22px;accent-color:var(--ouro)}
+.lista{list-style:none;padding:0;margin:8px 0 0}
+.lista li{border-top:1px solid var(--linha);padding:14px 0}
+.lista li:first-child{border-top:0}
+.lista b{display:block;color:var(--palha)}
+.lista span{display:block;color:var(--suave);font-size:16px;margin-bottom:10px}
+.lista .opcoes label{padding:10px 14px;font-size:17px}
+blockquote{margin:8px 0 12px;padding:12px 16px;border-left:3px solid var(--ouro);font:300 italic 20px/1.4 "Fraunces",Georgia,serif;color:var(--palha);background:#0d0b08;border-radius:0 12px 12px 0}
+.botao{display:block;width:100%;text-align:center;text-decoration:none;font:800 21px/1.2 "Manrope",system-ui,sans-serif;border-radius:14px;padding:19px 18px;border:0;cursor:pointer}
+.botao.ouro{background:var(--ouro);color:#15110a}
+.botao.ouro:active{background:var(--ouro2)}
+.botao.contorno{background:transparent;color:var(--ouro2);border:1.5px solid var(--ouro);margin-top:12px}
+.drive{margin-top:6px}
+.fim{padding:10px 0 18px;margin-top:8px}
+.aviso{color:var(--suave);font-size:15px;text-align:center;margin:10px 0 0}
+.ok{background:#1f2a1a;border-color:#4d6b3a}
+@media (max-width:420px){h1{font-size:32px}.duplo{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+  <div class="topo">Tecnologias da Alma · com Bernardo</div>
+  <h1>Tia, falta pouco <em>pra fechar</em></h1>
+  <p class="intro">Já deixei preenchido o que eu sei. Tu só confere, troca o que estiver errado e completa o que está vazio. No fim, um botão manda tudo pro meu WhatsApp. O que tu escrever fica salvo aqui mesmo se fechar a página.</p>
+
+  <form id="f" autocomplete="on">
+
+  <section>
+    <p class="passo">1 de 5</p>
+    <h2>Teus contatos</h2>
+    <label for="zap">WhatsApp que vai no botão da página</label>
+    <input type="text" id="zap" name="zap" value="51 9151-8330" inputmode="tel">
+    <label for="email">E-mail do Google onde vai ficar a planilha dos contatos</label>
+    <input type="email" id="email" name="email" value="denisefgarcia@gmail.com">
+    <div class="duplo">
+      <div><label for="ig1">Instagram da Tecnologias da Alma</label><input type="text" id="ig1" name="ig1" placeholder="@"></div>
+      <div><label for="ig2">Instagram da Alquimias do Sucesso</label><input type="text" id="ig2" name="ig2" placeholder="@"></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="passo">2 de 5</p>
+    <h2>A palavra de cada vídeo</h2>
+    <p class="dica">A pessoa manda essa palavra no teu WhatsApp, como tu fez com PORTAL. Pode trocar.</p>
+    <label for="p1">Vídeo do teste "Você está no rumo certo?"</label>
+    <input type="text" id="p1" name="p1" value="RUMO">
+    <label for="p2">Vídeo do Kit Prosperidade</label>
+    <input type="text" id="p2" name="p2" value="KIT">
+    <label for="p3">Vídeo da Constelação de dezembro</label>
+    <input type="text" id="p3" name="p3" value="CONSTELAÇÃO">
+  </section>
+
+  <section>
+    <p class="passo">3 de 5</p>
+    <h2>Preços e links</h2>
+    <p class="dica">O selo de preço entra no vídeo. Se algo mudou, escreve o valor novo.</p>
+    <div class="duplo">
+      <div><label for="kitp">Kit Prosperidade (R$)</label><input type="text" id="kitp" name="kitp" value="37" inputmode="decimal"></div>
+      <div><label for="desp">Desafio 21 Dias (R$)</label><input type="text" id="desp" name="desp" value="197" inputmode="decimal"></div>
+    </div>
+    <label for="kitl">Link da Kiwify do Kit Prosperidade</label>
+    <input type="url" id="kitl" name="kitl" placeholder="cola o link aqui">
+    <label for="desl">Link do Desafio 21 Dias (se tiver)</label>
+    <input type="url" id="desl" name="desl" placeholder="cola o link aqui">
+
+    <label>Constelação de dezembro: como vai ser?</label>
+    <div class="opcoes">
+      <label><input type="radio" name="cmod" value="Online"> Online</label>
+      <label><input type="radio" name="cmod" value="Presencial"> Presencial</label>
+      <label><input type="radio" name="cmod" value="Os dois"> Os dois</label>
+    </div>
+    <div class="duplo">
+      <div><label for="cpre">Preço (R$)</label><input type="text" id="cpre" name="cpre" inputmode="decimal"></div>
+      <div><label for="cdat">Data</label><input type="text" id="cdat" name="cdat" placeholder="ex.: 13/12"></div>
+    </div>
+    <label for="cvag">Quantas vagas (se tiver limite)</label>
+    <input type="text" id="cvag" name="cvag">
+  </section>
+
+  <section>
+    <p class="passo">4 de 5</p>
+    <h2>Arquivos</h2>
+    <p class="dica">Sobe na pasta "Denise para Bernardo", dentro de "PARA A DENISE", no Drive. Se preferir, manda pelo WhatsApp.</p>
+    <a class="botao contorno drive" href="https://drive.google.com/drive/folders/1EpFjwkFrmkOeoGN-ggwvgnPkzfP6QF44" target="_blank" rel="noopener">Abrir a pasta do Drive</a>
+    <ul class="lista">
+      <li><b>Vídeo da porta, sem letras</b><span>O arquivo original que tu fez no Grok, antes de colocar o texto.</span>
+        <div class="opcoes"><label><input type="radio" name="a_porta" value="Subi no Drive"> Subi no Drive</label><label><input type="radio" name="a_porta" value="Mando pelo WhatsApp"> Mando no WhatsApp</label><label><input type="radio" name="a_porta" value="Não tenho mais"> Não tenho mais</label></div></li>
+      <li><b>2 ou 3 fotos tuas</b><span>Com luz boa. Pode ser atendendo ou retrato. Vão na página.</span>
+        <div class="opcoes"><label><input type="radio" name="a_fotos" value="Subi no Drive"> Subi no Drive</label><label><input type="radio" name="a_fotos" value="Mando pelo WhatsApp"> Mando no WhatsApp</label></div></li>
+      <li><b>PDFs do Desafio 21 Dias</b><span>Os que tu disse que ia me mandar.</span>
+        <div class="opcoes"><label><input type="radio" name="a_pdf" value="Subi no Drive"> Subi no Drive</label><label><input type="radio" name="a_pdf" value="Mando pelo WhatsApp"> Mando no WhatsApp</label></div></li>
+      <li><b>Tua voz (se quiser)</b><span>Um áudio de uns 15 segundos lendo devagar:</span>
+        <blockquote>Você está no rumo certo? Faz o meu teste gratuito. O link está na bio.</blockquote>
+        <div class="opcoes"><label><input type="radio" name="a_voz" value="Vou gravar"> Vou gravar</label><label><input type="radio" name="a_voz" value="Prefiro sem a minha voz"> Prefiro sem voz</label></div></li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="passo">5 de 5</p>
+    <h2>Nossa chamada</h2>
+    <label for="cham">Melhor dia e horário pra gente fazer a chamada de vídeo</label>
+    <input type="text" id="cham" name="cham" placeholder="ex.: segunda de tarde">
+    <label for="obs">Quer me contar mais alguma coisa?</label>
+    <textarea id="obs" name="obs" placeholder="dúvida, ideia, o que tu quiser"></textarea>
+  </section>
+
+  <div class="fim">
+    <button type="submit" class="botao ouro" id="enviar">Enviar pro Bernardo no WhatsApp</button>
+    <p class="aviso" id="aviso">Abre o WhatsApp com tudo escrito. É só tocar em enviar.</p>
+  </div>
+  </form>
+</main>
+<script>
+(function(){
+  var DESTINO = "5551991234155";
+  var CHAVE = "denise-perguntas-v1";
+  var f = document.getElementById("f");
+
+  function val(n){
+    var el = f.elements[n];
+    if(!el) return "";
+    if(el.length && el[0] && el[0].type === "radio"){
+      for(var i=0;i<el.length;i++){ if(el[i].checked) return el[i].value; }
+      return "";
+    }
+    return (el.value || "").trim();
+  }
+  function ou(v){ return v ? v : "(falta)"; }
+
+  // salva e recupera o que ela escreveu
+  try{
+    var salvo = JSON.parse(localStorage.getItem(CHAVE) || "{}");
+    Object.keys(salvo).forEach(function(n){
+      var el = f.elements[n];
+      if(!el) return;
+      if(el.length && el[0] && el[0].type === "radio"){
+        for(var i=0;i<el.length;i++){ el[i].checked = (el[i].value === salvo[n]); }
+      } else { el.value = salvo[n]; }
+    });
+  }catch(e){}
+  f.addEventListener("input", guardar);
+  f.addEventListener("change", guardar);
+  function guardar(){
+    var d = {};
+    Array.prototype.forEach.call(f.elements, function(el){
+      if(!el.name) return;
+      if(el.type === "radio"){ if(el.checked) d[el.name] = el.value; }
+      else d[el.name] = el.value;
+    });
+    try{ localStorage.setItem(CHAVE, JSON.stringify(d)); }catch(e){}
+  }
+
+  function montar(){
+    return [
+      "*Respostas da Denise*",
+      "",
+      "*1. Contatos*",
+      "WhatsApp do botão: " + ou(val("zap")),
+      "E-mail da planilha: " + ou(val("email")),
+      "Instagram Tecnologias da Alma: " + ou(val("ig1")),
+      "Instagram Alquimias do Sucesso: " + ou(val("ig2")),
+      "",
+      "*2. Palavras dos vídeos*",
+      "Teste: " + ou(val("p1")),
+      "Kit: " + ou(val("p2")),
+      "Constelação: " + ou(val("p3")),
+      "",
+      "*3. Preços e links*",
+      "Kit Prosperidade: R$ " + ou(val("kitp")) + " | " + ou(val("kitl")),
+      "Desafio 21 Dias: R$ " + ou(val("desp")) + " | " + (val("desl") || "sem link"),
+      "Constelação: " + ou(val("cmod")) + ", R$ " + ou(val("cpre")) + ", data " + ou(val("cdat")) + (val("cvag") ? ", " + val("cvag") + " vagas" : ""),
+      "",
+      "*4. Arquivos*",
+      "Vídeo da porta: " + ou(val("a_porta")),
+      "Fotos: " + ou(val("a_fotos")),
+      "PDFs do Desafio: " + ou(val("a_pdf")),
+      "Voz: " + ou(val("a_voz")),
+      "",
+      "*5. Chamada*",
+      "Melhor horário: " + ou(val("cham")),
+      val("obs") ? "Recado: " + val("obs") : ""
+    ].join("\n").trim();
+  }
+
+  f.addEventListener("submit", function(e){
+    e.preventDefault();
+    guardar();
+    var url = "https://wa.me/" + DESTINO + "?text=" + encodeURIComponent(montar());
+    window.location.href = url;
+  });
+})();
+</script>
+</body>
+</html>
